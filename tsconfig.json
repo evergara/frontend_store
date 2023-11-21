@@ -3,6 +3,12 @@
   "compileOnSave": false,
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
+    "paths": {
+      "@feature/*":["./src/app/feature/*"],
+      "@core/*":["./src/app/core/*"],
+      "@app/*":["./src/app/*"],
+      "@src/*":["./src/*"],
+    },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
