@@ -8,6 +8,7 @@
       "@core/*": ["./src/app/core/*"],
       "@shared/*": ["./src/app/shared/*"],
       "@environments/*": ["./src/environments/*"],
+      "@assets/*": ["./src/assets/*"],
       "@app/*": ["./src/app/*"],
       "@src/*": ["./src/*"]
     },

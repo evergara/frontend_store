@@ -10,7 +10,7 @@ export class CategoriesService {
   private http = inject(HttpClient);
   private urlApi = `${environment.ecommerce_api}/categories`;
 
-  getAll() {
+  findAll() {
     return this.http.get<Category[]>(this.urlApi);
   }
 

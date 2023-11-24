@@ -11,7 +11,7 @@ export class ProductsService {
   private http = inject(HttpClient);
   private urlApi = `${environment.ecommerce_api}/products`;
 
-  findAll(categoryId: string): Observable<Product[]> {
+  findAll(categoryId?: string): Observable<Product[]> {
     const url = new URL(this.urlApi);
 
     if (categoryId) {

@@ -9,6 +9,11 @@ export const routes: Routes = [
     children: [
       {
         path: '',
+        redirectTo: 'products',
+        pathMatch: 'full'
+      },
+      {
+        path: 'products',
         loadChildren: () => import('@app/feature/products/product.routes').then(r => r.routes)
       },
       {
